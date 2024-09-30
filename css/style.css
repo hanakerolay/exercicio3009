@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.col {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+input {
+    margin: 10px 0;
+    padding: 5px;
+    border: 2px solid pink;
+}
+button {
+    padding: 10px;
+    background-color: #fc04e7;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+h1{
+    text-align: center;
+}
