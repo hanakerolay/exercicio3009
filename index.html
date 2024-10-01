@@ -15,18 +15,91 @@
         <div class="row">
             <div class="col">
                 <h2>Tabuada</h2>
-                <label for="numero">Digite um número:</label>
-                <input type="number" id="numero" placeholder="Digite um número">
+                <input type="number" id="numero" placeholder="Digite um número"><br>
                 <button onclick="gerarTabuada()">Gerar Tabuada</button>
                 <p id="resultadotabu"></p>
             </div>
 
             <div class="col">
                 <h2>Calculadora de Soma</h2>
-                <input type="number" id="valor" placeholder="Digite um valor" />
+                <input type="number" id="valor" placeholder="Digite um valor"/><br>
                 <button onclick="adicionarValor()">Adicionar</button>
                 <p id="somaResultado">Soma atual: 0</p>
             </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                    <h2>Simulador de Operações Bancárias</h2>
+                    <label for="saldo">Saldo Inicial (R$):</label>
+                    <input type="number" id="saldo" placeholder="Digite o saldo inicial da conta">
+
+                    <div id="operacoes">
+                <!-- Laço para criar 5 campos de operação -->
+                    <div class="operacao">
+                        <label for="operacao1">Operação 1:</label>
+                        <select id="tipo1">
+                            <option value="credito">CRÉDITO</option>
+                            <option value="debito">DÉBITO</option>
+                        </select>
+                        <input type="number" id="valor1" placeholder="Valor da operação">
+                    </div>
+                    <div class="operacao">
+                        <label for="operacao2">Operação 2:</label>
+                        <select id="tipo2">
+                            <option value="credito">CRÉDITO</option>
+                            <option value="debito">DÉBITO</option>
+                        </select>
+                        <input type="number" id="valor2" placeholder="Valor da operação">
+                    </div>
+                    <div class="operacao">
+                        <label for="operacao3">Operação 3:</label>
+                        <select id="tipo3">
+                            <option value="credito">CRÉDITO</option>
+                            <option value="debito">DÉBITO</option>
+                        </select>
+                        <input type="number" id="valor3" placeholder="Valor da operação">
+                    </div>
+                    <div class="operacao">
+                        <label for="operacao4">Operação 4:</label>
+                        <select id="tipo4">
+                            <option value="credito">CRÉDITO</option>
+                            <option value="debito">DÉBITO</option>
+                        </select>
+                        <input type="number" id="valor4" placeholder="Valor da operação">
+                    </div>
+                    <div class="operacao">
+                        <label for="operacao5">Operação 5:</label>
+                        <select id="tipo5">
+                            <option value="credito">CRÉDITO</option>
+                            <option value="debito">DÉBITO</option>
+                        </select>
+                        <input type="number" id="valor5" placeholder="Valor da operação">
+                    </div>
+                </div>
+
+                    <button onclick="calcularSaldo()">Calcular Saldo Final</button>
+
+                    <div class="result" id="resultadoSaldo"></div>
+                </div>
+
+                <div class="col">
+                    <h2>Registro de Presença do Aluno</h2>
+
+                    <label for="totalAulas">Total de Aulas:</label>
+                    <input type="number" id="totalAulas" placeholder="Digite o número total de aulas">
+
+                    <button onclick="gerarRegistros()">Registrar Presenças</button>
+
+                    <p id="registroPresencas" style="margin-top: 20px;"></p>
+
+                    <button id="calcularPresen" onclick="calcularResultado()" style="display:none;">Calcular Resultado</button>
+
+                    <p class="result" id="resultadoPresen"></p>
+                </div>
         </div>
     </div>
     

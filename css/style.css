@@ -4,6 +4,7 @@ body {
 }
 
 .container {
+    padding: 20px;
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
@@ -27,6 +28,7 @@ input {
     border: 2px solid pink;
 }
 button {
+    width: 50%;
     padding: 10px;
     background-color: #fc04e7;
     color: white;
