@@ -59,13 +59,6 @@ function calcularSaldo() {
 }
 
 
-
-
-
-
-
-
-
 function gerarRegistros() {
     let totalAulas = Number(document.getElementById('totalAulas').value);
     let registroPresencas = document.getElementById('registroPresencas');
